@@ -1,0 +1,26 @@
+workflow_id: marketing_growth_squad
+entry_node: step_seo_growth
+nodes:
+  step_seo_growth:
+    node_id: step_seo_growth
+    agent_id: lobster_seo
+    hitl_enabled: false
+    transitions:
+      - condition: "always"
+        next_node: step_creative_copy
+
+  step_creative_copy:
+    node_id: step_creative_copy
+    agent_id: lobster_creative
+    hitl_enabled: false
+    transitions:
+      - condition: "always"
+        next_node: step_legal_verify
+
+  step_legal_verify:
+    node_id: step_legal_verify
+    agent_id: lobster_legal
+    hitl_enabled: true  # 【警告】在此节点触发阻断，等待人类导演在大屏上点击“放行”
+    transitions:
+      - condition: "always"
+        next_node: "END"

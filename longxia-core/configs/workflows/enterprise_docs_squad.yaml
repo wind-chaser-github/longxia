@@ -1,0 +1,18 @@
+workflow_id: enterprise_docs_squad
+entry_node: step_doc_planner
+nodes:
+  step_doc_planner:
+    node_id: step_doc_planner
+    agent_id: lobster_coder
+    hitl_enabled: false
+    transitions:
+      - condition: "always"
+        next_node: step_doc_verifier
+
+  step_doc_verifier:
+    node_id: step_doc_verifier
+    agent_id: lobster_verifier
+    hitl_enabled: false  # 全自动交付排版工整、结构严密的 PRD、OKR、Runbook 等企业级文档
+    transitions:
+      - condition: "always"
+        next_node: "END"

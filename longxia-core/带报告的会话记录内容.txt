@@ -1,0 +1,76 @@
+
+
+帮我调研下最火的AI Agent
+
+
+WorkBuddy
+
+ 需求分析
+用户希望调研当前最火的 AI Agent，这是一个纯调研任务，不涉及代码开发。我将走部分工作流，仅分派给产品经理（许清楚）以研究模式进行市场调研。
+
+计划：
+
+创建团队 software-ai-agent-research
+分派给产品经理许清楚进行 AI Agent 市场调研，输出竞品分析报告
+现在开始执行！
+
+Tool Search
+AI Agent 市场调研团队，调研当前最火的AI Agent产品
+
+Defer Execute Tool
+团队已创建，现在分派给产品经理许清楚进行调研。
+
+AI Agent市场调研
+
+任务
+software-product-manager: AI Agent市场调研
+已将调研任务分派给产品经理许清楚，他正在通过网络搜索收集最新的 AI Agent 市场信息。调研完成后会自动通知我，届时我会将结果汇总给你。请稍等片刻 ⏳
+
+许清楚已完成调研报告，让我先查看完整报告内容，然后汇总给你。
+
+已读取
+C:\Users\Dragon\WorkBuddy\2026-05-18-task-2\deliverables\ai-agent-research-report.md
+L1-末尾
+报告质量不错，内容完整。现在关闭团队并交付结果。
+
+调研已完成！以下是核心发现汇总：
+
+🔥 AI Agent 市场调研 — 核心结论
+市场规模
+2025年全球 AI Agent 市场规模约 80亿美元，预计 2030 年突破 520亿美元（CAGR ~46%）。
+
+7 大最火 AI Agent 产品
+产品	定位	亮点
+OpenAI ChatGPT Agent	通用Agent（Operator+Deep Research+ChatGPT）	o3模型驱动，任务成功率提升35%
+Anthropic Claude Orbit	主动式AI助手（泄露曝光）	7x24后台主动替用户工作，范式跃迁
+Google Gemini Agent	跨产品Agent生态	Project Mariner已停运，技术整合至Gemini Agent
+Microsoft Copilot Studio	企业级低代码Agent平台	多Agent编排GA，深度绑定M365生态
+Cursor	AI编程IDE龙头	D轮23亿美元，估值293亿，ARR破10亿
+Cognition Devin+Windsurf	全自动AI软件工程师	估值102亿→洽谈250亿，收购Windsurf
+Manus（中国）	全球首款通用AI Agent	2025年3月爆红，Meta 20亿收购被中国叫停
+五大关键趋势
+从"被动响应"到"主动服务" — Anthropic Orbit 领跑
+AI编程Agent最先跑通商业化 — Cursor/Devin 验证路径
+多Agent协作成为标配 — 微软、LangGraph 等全面支持
+框架生产化加速 — LangGraph 1.0 进入生产级
+地缘政治成关键变量 — Manus 收购案上升到国家安全层面
+完整调研报告（约8000字，含象限图、投融资数据、趋势分析）已保存，可通过下方附件查看。
+
+交付 AI Agent 市场调研报告
+
+Deliver Attachments
+报告已交付！如果你想对某个方向深入调研（比如只看 AI 编程 Agent、或者开源框架的详细对比），随时告诉我。
+
+产品经理已确认关闭，团队任务全部完成。如有后续需求随时告诉我！
+
+
+
+
+
+任务产生制品（2个）：
+
+Tasks
+查看全部制品 →
+文件变更（1个）：
+查看文件变更 →
+

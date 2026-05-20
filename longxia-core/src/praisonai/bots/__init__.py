@@ -1,0 +1,97 @@
+"""
+Bot implementations for PraisonAI.
+
+Provides messaging bot runtimes for Telegram, Discord, Slack, and WhatsApp,
+plus the user-friendly Bot and BotOS orchestrator classes.
+"""
+
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from .telegram import TelegramBot
+    from .discord import DiscordBot
+    from .slack import SlackBot
+    from .whatsapp import WhatsAppBot
+    from .linear import LinearBot
+    from .email import EmailBot
+    from .agentmail import AgentMailBot
+    from .bot import Bot
+    from .botos import BotOS
+    from ._session import BotSessionManager
+    from ._dlq import InboundDLQ, DLQEntry
+    from ._slack_approval import SlackApproval
+    from ._telegram_approval import TelegramApproval
+    from ._discord_approval import DiscordApproval
+    from ._webhook_approval import WebhookApproval
+    from ._http_approval import HTTPApproval
+
+def __getattr__(name: str):
+    """Lazy loading of bot components."""
+    if name == "TelegramBot":
+        from .telegram import TelegramBot
+        return TelegramBot
+    if name == "DiscordBot":
+        from .discord import DiscordBot
+        return DiscordBot
+    if name == "SlackBot":
+        from .slack import SlackBot
+        return SlackBot
+    if name == "WhatsAppBot":
+        from .whatsapp import WhatsAppBot
+        return WhatsAppBot
+    if name == "LinearBot":
+        from .linear import LinearBot
+        return LinearBot
+    if name == "EmailBot":
+        from .email import EmailBot
+        return EmailBot
+    if name == "AgentMailBot":
+        from .agentmail import AgentMailBot
+        return AgentMailBot
+    if name == "Bot":
+        from .bot import Bot
+        return Bot
+    if name == "BotOS":
+        from .botos import BotOS
+        return BotOS
+    if name == "SlackApproval":
+        from ._slack_approval import SlackApproval
+        return SlackApproval
+    if name == "TelegramApproval":
+        from ._telegram_approval import TelegramApproval
+        return TelegramApproval
+    if name == "DiscordApproval":
+        from ._discord_approval import DiscordApproval
+        return DiscordApproval
+    if name == "WebhookApproval":
+        from ._webhook_approval import WebhookApproval
+        return WebhookApproval
+    if name == "HTTPApproval":
+        from ._http_approval import HTTPApproval
+        return HTTPApproval
+    # W1 — cross-platform mirror + identity
+    if name == "mirror_to_session":
+        from ._mirror import mirror_to_session
+        return mirror_to_session
+    if name == "BotSessionManager":
+        from ._session import BotSessionManager
+        return BotSessionManager
+    # N4 — inbound dead-letter queue
+    if name == "InboundDLQ":
+        from ._dlq import InboundDLQ
+        return InboundDLQ
+    if name == "DLQEntry":
+        from ._dlq import DLQEntry
+        return DLQEntry
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
+
+__all__ = [
+    "TelegramBot", "DiscordBot", "SlackBot", "WhatsAppBot", "LinearBot", "EmailBot", "AgentMailBot",
+    "Bot", "BotOS",
+    "BotSessionManager",
+    "InboundDLQ", "DLQEntry",
+    "SlackApproval", "TelegramApproval", "DiscordApproval",
+    "WebhookApproval", "HTTPApproval",
+    # W1
+    "mirror_to_session", "BotSessionManager",
+]

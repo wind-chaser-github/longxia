@@ -1,0 +1,26 @@
+workflow_id: dev_squad
+entry_node: step_governor_init
+nodes:
+  step_governor_init:
+    node_id: step_governor_init
+    agent_id: lobster_governor
+    hitl_enabled: false
+    transitions:
+      - condition: "always"
+        next_node: step_code_dev
+
+  step_code_dev:
+    node_id: step_code_dev
+    agent_id: lobster_coder
+    hitl_enabled: false
+    transitions:
+      - condition: "always"
+        next_node: step_code_verify
+
+  step_code_verify:
+    node_id: step_code_verify
+    agent_id: lobster_verifier
+    hitl_enabled: true  # 【警告】在此节点触发阻断，等待人类导演在大屏上点击“放行”
+    transitions:
+      - condition: "always"
+        next_node: "END"

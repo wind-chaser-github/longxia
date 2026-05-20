@@ -1,0 +1,26 @@
+workflow_id: web_ppt_squad
+entry_node: step_governor_init
+nodes:
+  step_governor_init:
+    node_id: step_governor_init
+    agent_id: lobster_governor
+    hitl_enabled: false
+    transitions:
+      - condition: "always"
+        next_node: step_ppt_architect
+        
+  step_ppt_architect:
+    node_id: step_ppt_architect
+    agent_id: lobster_uiux
+    hitl_enabled: false
+    transitions:
+      - condition: "always"
+        next_node: step_final_verify
+
+  step_final_verify:
+    node_id: step_final_verify
+    agent_id: lobster_verifier
+    hitl_enabled: false  # 【已优化】关闭人工放行阻断，允许大模型全自动生成最终PPT产物
+    transitions:
+      - condition: "always"
+        next_node: "END"

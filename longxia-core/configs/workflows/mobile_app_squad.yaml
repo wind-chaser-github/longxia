@@ -1,0 +1,26 @@
+workflow_id: mobile_app_squad
+entry_node: step_app_designer
+nodes:
+  step_app_designer:
+    node_id: step_app_designer
+    agent_id: lobster_uiux
+    hitl_enabled: false
+    transitions:
+      - condition: "always"
+        next_node: step_app_coder
+        
+  step_app_coder:
+    node_id: step_app_coder
+    agent_id: lobster_coder
+    hitl_enabled: false
+    transitions:
+      - condition: "always"
+        next_node: step_app_verify
+
+  step_app_verify:
+    node_id: step_app_verify
+    agent_id: lobster_verifier
+    hitl_enabled: false  # 全自动生成带 iPhone/Pixel 外壳的多屏移动端交互应用
+    transitions:
+      - condition: "always"
+        next_node: "END"

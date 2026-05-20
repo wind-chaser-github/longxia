@@ -1,0 +1,26 @@
+workflow_id: media_studio_squad
+entry_node: step_media_architect
+nodes:
+  step_media_architect:
+    node_id: step_media_architect
+    agent_id: lobster_uiux
+    hitl_enabled: false
+    transitions:
+      - condition: "always"
+        next_node: step_media_coder
+        
+  step_media_coder:
+    node_id: step_media_coder
+    agent_id: lobster_coder
+    hitl_enabled: false
+    transitions:
+      - condition: "always"
+        next_node: step_media_verify
+
+  step_media_verify:
+    node_id: step_media_verify
+    agent_id: lobster_verifier
+    hitl_enabled: false  # 全自动放行，输出最终多媒体产物 (.png / .mp4 / 动画单页)
+    transitions:
+      - condition: "always"
+        next_node: "END"

@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+.npm
+.eslintcache
+
+# Logs and databases
+logs/
+*.log
+llm_models_db.sqlite
+*.db
+*.sqlite
+
+# Local configurations
+.env
+.vscode/
+.idea/
+.DS_Store
+
+# Temporary workspace outputs
+sessions/
+memory/
+tmp/
+temp/

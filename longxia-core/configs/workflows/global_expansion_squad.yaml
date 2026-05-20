@@ -1,0 +1,26 @@
+workflow_id: global_expansion_squad
+entry_node: step_global_trans
+nodes:
+  step_global_trans:
+    node_id: step_global_trans
+    agent_id: lobster_global
+    hitl_enabled: false
+    transitions:
+      - condition: "always"
+        next_node: step_community_ops
+
+  step_community_ops:
+    node_id: step_community_ops
+    agent_id: lobster_community
+    hitl_enabled: false
+    transitions:
+      - condition: "always"
+        next_node: step_final_verify
+
+  step_final_verify:
+    node_id: step_final_verify
+    agent_id: lobster_verifier
+    hitl_enabled: true  # 【警告】在此节点触发阻断，等待人类导演在大屏上点击“放行”
+    transitions:
+      - condition: "always"
+        next_node: "END"

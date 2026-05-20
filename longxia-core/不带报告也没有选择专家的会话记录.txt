@@ -1,0 +1,52 @@
+
+
+
+
+深度思考
+2026年最火AI Agent调研报告
+一、全球TOP 10 AI Agent排行榜
+根据OpenRouter 2026年5月实时数据，周Token消耗量是衡量AI Agent热度的核心指标：
+
+排名	产品	类型	周消耗	核心亮点
+🥇	OpenClaw	通用Agent	9.66T	开源全能型，真正执行任务（跑命令/浏览/发邮件）
+🥈	Hermes Agent	自主进化Agent	6.08T	Nous Research出品，持久记忆+自我成长
+🥉	Kilo Code	编程Agent	5.51T	VS Code编程之王，支持多端协同
+4	Claude Code	编程Agent	3.23T	Anthropic官方，命令行编程利器
+5	BLACKBOXAI	编程Agent	1.56T	面向构建者，0到1项目搭建
+6	liteLLM	LLM框架	1.38T	开源LLM网关，统一调用不同模型
+7	Cline	IDE编程Agent	913B	开源可控，IDE内完全自主
+8	Janitor AI	角色聊天	953B	角色扮演头部平台，用户黏性极高
+9	ISEKAI ZERO	AI冒险	714B	角色扮演+RPG，年轻用户增长快
+10	Roo Code	多Agent团队	437B	VS Code扩展，多Agent分工协作
+二、最受欢迎的企业级AI Agent平台
+平台	厂商	特点	定价
+GPTs	OpenAI	自定义智能体+知识库+多模态	$20/月(Plus)
+Copilot Studio	Microsoft	低代码+365生态集成	$200+/月(企业)
+Claude Agents	Anthropic	高安全性+高质量推理	按Token计费
+Gemini Agent	Google	多步骤任务规划+实时浏览	API+订阅
+Coze	字节跳动	零代码+丰富插件（国内首选）	免费/按调用
+三、开发者热门框架
+框架	定位	特点
+LangChain	Agent开发标准	完整工具链，开源免费
+LangGraph	复杂工作流	多Agent协作+状态管理
+CrewAI	多智能体协作	角色分工+团队模拟
+LlamaIndex	数据RAG专家	知识库构建+文档理解
+四、2026年四大趋势
+1. 编程Agent占据半壁江山 TOP 20中至少7款编程相关，AI写代码已从Demo变成真实生产力。
+
+2. 通用Agent"双雄争霸" OpenClaw + Hermes Agent合计消耗近16T，从工具进化为"数字员工平台"。
+
+3. 角色扮演持续吸金 情感陪伴+长上下文是最大C端付费场景之一。
+
+4. LLM网关成为基础设施 liteLLM与New API同时进入TOP 15，基础设施层悄然壮大。
+
+五、选型建议
+你的需求	推荐
+需要真正干活的AI助手	OpenClaw
+长期记忆+自我成长	Hermes Agent
+VS Code编程（自动化）	Kilo Code
+开源可控IDE编程	Cline
+企业低代码Agent	Copilot Studio / Coze
+快速搭建知识库Agent	Coze / LangChain
+多Agent团队协作	CrewAI / Roo Code
+如果你有特定的场景需求（如编程、企业自动化、聊天机器人等），我可以帮你进一步分析最合适的方案！
