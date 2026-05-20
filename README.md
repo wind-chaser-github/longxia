@@ -33,10 +33,10 @@ graph TD
 
 ---
 
-## 🌟 核心功能模块 (点击展开详情)
+## 🌟 核心能力蓝图与 Roadmap (针对 BW 现场定制)
 
 <details>
-<summary><b>🎮 1. 大屏端拆解式可视化沙盘 (点击展开)</b></summary>
+<summary><b>🚧 [WIP] 1. 大屏端拆解式可视化沙盘 (点击展开)</b></summary>
 <br>
 
 *   **智能体分窗博弈**：主舞台大屏幕采用多窗口分屏排版，实时展示各龙虾参谋在接收到任务后的拆解、反驳、修正的语义流。
@@ -46,7 +46,7 @@ graph TD
 </details>
 
 <details>
-<summary><b>💳 2. 专属「极限测评官」实体工牌打印 (点击展开)</b></summary>
+<summary><b>🚧 [WIP] 2. 专属「极限测评官」实体工牌打印 (点击展开)</b></summary>
 <br>
 
 *   **热敏物理防糊算法**：由于热敏打印物理上只能显现单色且高热容易导致纸张变形，系统会对合成图像自动进行**“半色调网点（Halftone Dots）”**优化，禁止大色块加热，确保线条与字迹边缘清晰。
@@ -55,7 +55,7 @@ graph TD
 </details>
 
 <details>
-<summary><b>🎬 3. AI-GenJi 虚拟人出镜与危机公关 (点击展开)</b></summary>
+<summary><b>🚧 [WIP] 3. AI-GenJi 虚拟人出镜与危机公关 (点击展开)</b></summary>
 <br>
 
 *   **1.5秒声音克隆**：本地离线部署 `GPT-SoVITS` 引擎，基于 5 分钟的 Reference Audio 样本，可在 1.5 秒内极速生成语气自然的 GenJi 语音。
@@ -64,7 +64,7 @@ graph TD
 </details>
 
 <details>
-<summary><b>📅 4. 日程消解与线上会议生成 (点击展开)</b></summary>
+<summary><b>🚧 [WIP] 4. 日程消解与线上会议生成 (点击展开)</b></summary>
 <br>
 
 *   **5秒无冲突编排**：由生活参谋调用大模型进行多任务时间冲突消解，生成标准的 SVG 行程卡大图。
@@ -73,7 +73,7 @@ graph TD
 </details>
 
 <details>
-<summary><b>🌐 5. 扫码带走与云端同步 (点击展开)</b></summary>
+<summary><b>🚧 [WIP] 5. 扫码带走与云端同步 (点击展开)</b></summary>
 <br>
 
 *   **OSS 异步同步**：5090 本地生成的网页与工牌大图，在后台毫秒级异步同步上传至云端对象存储（OSS/COS）。
